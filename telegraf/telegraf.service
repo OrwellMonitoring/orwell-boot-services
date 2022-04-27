@@ -1,0 +1,9 @@
+[Unit]
+Description = Telegraf init service, when the SO starts to run telegraf will also start
+After=network-online.target
+
+[Service]
+ExecStart=/usr/bin/telegraf_init.sh
+
+[Install]
+WantedBy=multi-user.target 
