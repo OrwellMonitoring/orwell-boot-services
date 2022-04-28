@@ -1,1 +1,1 @@
-10.0.12.82:8008/service_discovery/kafka/
+http://10.0.12.82:8008/service_discovery/kafka/
