@@ -3,6 +3,7 @@ Description = Telegraf init service, when the SO starts to run telegraf will als
 After=network-online.target
 
 [Service]
+User=telegraf
 ExecStart=/usr/bin/telegraf_init.sh
 
 [Install]
