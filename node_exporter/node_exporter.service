@@ -1,12 +1,11 @@
 [Unit]
 Description=Node Exporter
 After=network-online.target
-
 [Service]
 User=node_exporter
 Group=node_exporter
 Type=simple
-ExecStart=/usr/local/bin/node_exporter
+ExecStart=/usr/local/etc/node/init.sh
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=multi-user.target                 

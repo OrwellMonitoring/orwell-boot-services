@@ -12,7 +12,7 @@ process = subprocess.Popen(bash_command, stdout=subprocess.PIPE)
 ip_address = process.communicate()[0].decode("utf-8").split(" ")[0]
 
 while True:
-    f=open("kafka_location.txt","r")
+    f=open(os.path.basename('/usr/local/etc/node/kafka_location.txt'),"r")
     kafka_url = f.read()
     response= requests.get(url=kafka_url).text
     kafka_location=response
